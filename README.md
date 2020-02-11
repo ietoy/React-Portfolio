@@ -1,2 +1,2 @@
-# React-Portfolio
-My updated professional portfolio utilizing the ReactJS library.
+# Updated-Professional-Portfolio
+My updated professional web development portfolio, now full-stack.
