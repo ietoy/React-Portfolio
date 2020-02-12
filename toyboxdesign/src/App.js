@@ -11,6 +11,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 
+import Wrapper from './components/Wrapper/Wrapper';
 
 
 
@@ -19,17 +20,15 @@ function App() {
     <Router>
       <div>
         <Navbar />
-
-          <Route exact path="/" component= {Home} />
-          <Route exact path="/About" component= {About} />
-          <Route exact path="/Projects" component= {Projects} />
-          <Route exact path="/Contact" component= {Contact} />
-
+        <Wrapper>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Projects" component={Projects} />
+          <Route exact path="/Contact" component={Contact} />
+        </Wrapper>
         <Footer />
       </div>
     </Router>
-
-
   );
 }
 
