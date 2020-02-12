@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Radlibz",
-        "img": "radlibz-PIC.png",
+        "img": "./images/radlibz-PIC.png",
         "gif": "img gif",
         "description": "Play Mad-Libs on the go! Hear your story in any accent you like!",
         "deployed": "https://amandalatkins.github.io/radlibz/",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Poke-Memory",
-        "img": "pokememory-PIC.png",
+        "img": "./images/pokememory-PIC.png",
         "gif": "img gif",
         "description": "A Pokemon themed memory game! What's your high score?",
         "deployed": "https://ietoy.github.io/Poke-Memory/",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Tinfoil Hat",
-        "img": "tinfoilhat-PIC.png",
+        "img": "./images/tinfoilhat-PIC.png",
         "gif": "img gif",
         "description": "Tin Foil Hat informs users about their congressional representatives and their campaign finance donation history.",
         "deployed": "https://immense-brushlands-89111.herokuapp.com/",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "Note Taker",
-        "img": "notetaker-PIC.png",
+        "img": "./images/notetaker-PIC.png",
         "gif": "img gif",
         "description": "A simple note taking aplication that leverages Express to track our notes and provide data persistence.",
         "deployed": "https://github.com/ietoy/Note-Taker",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "name": "Employee Tracker",
-        "img": "img src",
+        "img": "./images/",
         "gif": "img gif",
         "description": "A node.js CLI application that allows a user to manage a database of employee information",
         "deployed": "https://github.com/ietoy/Employee-Tracker",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "name": "Random Password Generator",
-        "img": "pwgen-PIC.png",
+        "img": "./images/pwgen-PIC.png",
         "gif": "img gif",
         "description": "This application generates a random password based on user selected character sets and character length.",
         "deployed": "https://ietoy.github.io/Random-Password-Generator/",

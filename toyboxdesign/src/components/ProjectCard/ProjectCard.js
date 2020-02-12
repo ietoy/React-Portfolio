@@ -1,10 +1,8 @@
 import React from "react";
 
 function ProjectCard(props) {
-
     return (
-        <div class="row">
-            <div class="col s12 m7">
+            <div class="col l3 m4 s6">
                 <div class="card">
                     <div class="card-image">
                         <a href={props.deployed}></a>
@@ -16,9 +14,7 @@ function ProjectCard(props) {
                     </div>
                 </div>
             </div>
-        </div>
     )
-
 }
 
 export default ProjectCard;

@@ -1,29 +1,22 @@
 import React from "react";
 
-// import ProjectCard from "../components/ProjectCard/ProjectCard"
+import ProjectCard from "../components/ProjectCard/ProjectCard"
 
-// import projects from '../src/JSON/projects.JSON';
+import projects from '../JSON/projects.json';
 
 function Projects() {
-
-
     return (
-        <div className="container">
-            <h1>This is the Project Page! Fix Me Later!</h1>
-        </div>
+        projects.map(proj => {
+            return (
+                    <ProjectCard
+                        name={proj.name}
+                        img={proj.img}
+                        deployed={proj.deployed}
+                        description={proj.description}
+                    />
+            )
+        })
     )
-
-
-    // return (
-    //     projects.map(proj => {
-    //         <ProjectCard 
-    //             name = {proj.name}
-    //             img = {proj.img}
-    //             deployed = {proj.deployed}
-    //             description = {proj.description}
-    //         />
-    //     })        
-    // )
 }
 
 export default Projects;

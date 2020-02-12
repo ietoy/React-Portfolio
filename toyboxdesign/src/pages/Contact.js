@@ -6,7 +6,7 @@ function Contact() {
             <h1>Contact</h1>
             <p>Please feel free to contact me through any of the below means. I look forward to hearing from you!</p>
 
-            <img src="https://ietoy.github.io/professional-portfolio/images/profile-pic.jpg" />
+            <img className="" src="https://ietoy.github.io/professional-portfolio/images/profile-pic.jpg" />
 
             <p>Email: iantoy3235@gmail.com</p>
             <p>Phone: (925) 667-6453</p>

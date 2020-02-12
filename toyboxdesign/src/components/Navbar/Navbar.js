@@ -6,7 +6,10 @@ function Navbar() {
         <div>
             <nav>
                 <div className="nav-wrapper container">
-                    <a href="/" className="brand-logo">Logo</a>
+                    <a href="/" className="brand-logo">
+                        ToyBox Design
+                        <img src="../images/tbdesign-logo.png" />
+                    </a>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu icon</i></a>
                     <ul className="right hide-on-med-and-down">
                         <li><a href="/">Home</a></li>
