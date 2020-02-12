@@ -2,33 +2,23 @@ import React from "react";
 import "./style.css";
 
 function Footer() {
-    return (
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-    );
+  return (
+    <footer className="page-footer">
+      <div className="footer-copyright">
+
+        <div className="container center-align">
+          <a href="https://github.com/ietoy" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <a href="https://medium.com/@iantoy" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/ian-toy-265077196/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.twitch.tv/magiccitymtg" target="_blank"><i class="fab fa-twitch fa-2x"></i></a>
+        </div>
+
+
+
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

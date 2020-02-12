@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Radlibz!",
+        "name": "Radlibz",
         "img": "radlibz-PIC.png",
         "gif": "img gif",
         "description": "Play Mad-Libs on the go! Hear your story in any accent you like!",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "name": "Poke-Memory!",
+        "name": "Poke-Memory",
         "img": "pokememory-PIC.png",
         "gif": "img gif",
         "description": "A Pokemon themed memory game! What's your high score?",
