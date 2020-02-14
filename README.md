@@ -132,7 +132,7 @@ The resulting product looks something like this:
 
 
 ## The App in Action!
-* [See Live Site](deployed-link-goes-here) 
+* [See Live Site](https://ietoy.github.io/React-Portfolio/) 
 
 ## Authors
 Ian Toy
