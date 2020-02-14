@@ -1,15 +1,19 @@
 import React from "react";
+import "./style.css";
+
 
 function ProjectCard(props) {
     return (
-            <div class="col l3 m4 s6">
-                <div class="card">
-                    <div class="card-image">
-                        <a href={props.deployed}></a>
-                        <img src={props.img} />
-                        <span class="card-title">{props.name}</span>
+            <div className="project-card" className="col l3 m4 s6 ">
+                <div className="card hoverable">
+                    <div className="card-image">
+                        <a className="valign-wrapper" href={props.deployed}>
+                            <img src={props.img} />
+                        </a>
+                        
                     </div>
-                    <div class="card-content">
+                    <div className="card-content">
+                    <span className="card-title">{props.name}</span>
                         <p>{props.description}</p>
                     </div>
                 </div>

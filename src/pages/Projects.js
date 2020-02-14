@@ -1,21 +1,18 @@
 import React from "react";
-
-import ProjectCard from "../components/ProjectCard/ProjectCard"
-
-import projects from '../JSON/projects.json';
+// import ProjectCard from "../components/ProjectCard/ProjectCard"
+// import projects from '../JSON/projects.json';
+import CardContainer from '../components/CardContainer/CardContainer';
+import AllProjects from "../components/AllProjects";
 
 function Projects() {
+
     return (
-        projects.map(proj => {
-            return (
-                    <ProjectCard
-                        name={proj.name}
-                        img={proj.img}
-                        deployed={proj.deployed}
-                        description={proj.description}
-                    />
-            )
-        })
+        <div>
+            <h1 className="center">Projects</h1>
+            <CardContainer>
+                <AllProjects />
+            </CardContainer>
+        </div>
     )
 }
 

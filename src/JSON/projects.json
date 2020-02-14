@@ -37,17 +37,17 @@
     },
     {
         "id": 5,
-        "name": "Employee Tracker",
-        "img": "./images/",
+        "name": "Random Password Generator",
+        "img": "./images/pwgen-PIC.png",
         "gif": "img gif",
-        "description": "A node.js CLI application that allows a user to manage a database of employee information",
-        "deployed": "https://github.com/ietoy/Employee-Tracker",
-        "repo": "https://github.com/ietoy/Employee-Tracker" 
+        "description": "This application generates a random password based on user selected character sets and character length.",
+        "deployed": "https://ietoy.github.io/Random-Password-Generator/",
+        "repo": "https://github.com/ietoy/Random-Password-Generator" 
     },
     {
         "id": 6,
-        "name": "Random Password Generator",
-        "img": "./images/pwgen-PIC.png",
+        "name": "Weather Dashboard",
+        "img": "./images/weather-PIC.png",
         "gif": "img gif",
         "description": "This application generates a random password based on user selected character sets and character length.",
         "deployed": "https://ietoy.github.io/Random-Password-Generator/",
