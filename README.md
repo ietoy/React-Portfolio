@@ -1,68 +1,143 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Professional Portfolio
+This website is a platform for my professional web presence built with the React framework.
 
-## Available Scripts
+![FrontPage](/public/images/aboutpage.PNG)
 
-In the project directory, you can run:
+## Table of Contents
+List the different sections of your README here.
 
-### `npm start`
+## Introduction
+As a web developer, I need a professional portfolio so I can attact employers and contracts. My websites aims to accomplish this goal by highlighting my previous projects, my credentials, and positive reviews from happy customers.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* React
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Requirements
+This website can be viewed in any browser that supports JavaScript.
 
-### `npm test`
+## Under the Hood
+As a young developer, I am focused on learning new skills and building new applications. In order to attract clients, I do these things to improve my coding abilities and to build a robust porfolio showcasing my implementation of these skills.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Using the React famework, I can easily update elements generated on each page by simply updating my list of projects and skills.
 
-### `npm run build`
+Here is a JSON object containing information about a few of my most recent projects:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    [
+        {
+            "id": 1,
+            "name": "Radlibz",
+            "img": "./images/radlibz-PIC.png",
+            "gif": "img gif",
+            "description": "Play Mad-Libs on the go! Hear your story in any accent you like!",
+            "deployed": "https://amandalatkins.github.io/radlibz/",
+            "repo": "https://github.com/amandalatkins/radlibz" 
+        },
+        {
+            "id": 2,
+            "name": "Poke-Memory",
+            "img": "./images/pokememory-PIC.png",
+            "gif": "img gif",
+            "description": "A Pokemon themed memory game! What's your high score?",
+            "deployed": "https://ietoy.github.io/Poke-Memory/",
+            "repo": "https://github.com/ietoy/Poke-Memory" 
+        },
+        {
+            "id": 3,
+            "name": "Tinfoil Hat",
+            "img": "./images/tinfoilhat-PIC.png",
+            "gif": "img gif",
+            "description": "Tin Foil Hat informs users about their congressional representatives and their campaign finance donation history.",
+            "deployed": "https://immense-brushlands-89111.herokuapp.com/",
+            "repo": "https://github.com/boundsalexis/tinfoil-hat" 
+        },
+        ...
+    ]
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+By leveraging the power of React components, we are able to dynamically generate a project card that displays on the project page from this JSON file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In our ProjectCard component, we feed properties (props) to a function that generates HTML using JSX:
 
-### `npm run eject`
+    import React from "react";
+    import "./style.css";
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    function ProjectCard(props) {
+        return (
+                <div className="col l3 m4 s6 ">
+                    <div className="card hoverable project-card">
+                        <div className="card-image">
+                            <a className="" href={props.deployed}>
+                                <img src={props.img} />
+                            </a>
+                        </div>
+                        <div className="card-content">
+                        <span className="card-title">{props.name}</span>
+                            <p>{props.description}</p>
+                        </div>
+                    </div>
+                </div>
+        )
+    }
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    export default ProjectCard;
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This component is then imported into our AllProjects component, which takes the information in the project.json file and creates several elements using the above component and the map array method:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+import React from "react";
+import ProjectCard from './ProjectCard/ProjectCard';
+import projects from '../JSON/projects.json';
 
-## Learn More
+    function AllProjects() {
+        return (
+            projects.map(proj => {
+                return (
+                        <ProjectCard
+                            name={proj.name}
+                            img={proj.img}
+                            deployed={proj.deployed}
+                            description={proj.description}
+                        />
+                )
+            })
+        )
+    }
+        
+    export default AllProjects;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Finally, we call this AllProjects component when we generate the Projects page here:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+import React from "react";
+import CardContainer from '../components/CardContainer/CardContainer';
+import AllProjects from "../components/AllProjects";
 
-### Code Splitting
+    function Projects() {
+        return (
+            <div>
+                <h1 className="center">Projects</h1>
+                <CardContainer>
+                    <AllProjects />
+                </CardContainer>
+            </div>
+        )
+    }
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    export default Projects;
 
-### Analyzing the Bundle Size
+The resulting product looks something like this:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+![Project Page](/public/images/projectpage.PNG)
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## The App in Action!
+* [See Live Site](deployed-link-goes-here) 
 
-### Advanced Configuration
+## Authors
+Ian Toy
+* [GitHub](https://github.com/ietoy)
+* [LinkedIn](https://www.linkedin.com/in/ian-toy-265077196/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Acknowledgements
+Special thanks to our instructor Jerome and our TAs Mahisha and Kerwin. I really apprecaite all of your help!

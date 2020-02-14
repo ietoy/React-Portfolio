@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 
-
 function ProjectCard(props) {
     return (
             <div className="col l3 m4 s6 ">
