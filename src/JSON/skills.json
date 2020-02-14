@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "skill": "HTML",
+        "skillName": "HTML",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 2,
-        "skill": "CSS",
+        "skillName": "CSS",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 3,
-        "skill": "JavaScript",
-        "img": "https://pluralsight.imgix.net/paths/path-icons/javascript-36f5949a45.png",
+        "skillName": "JavaScript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 4,
-        "skill": "Bootstrap",
+        "skillName": "Bootstrap",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 5,
-        "skill": "Materialize",
-        "img": "https://library.kissclipart.com/20181120/fzq/kissclipart-materialize-css-clipart-cascading-style-sheets-css-525adfa0ede8318b.jpg",
+        "skillName": "Materialize",
+        "img": "https://www.nicepng.com/png/full/169-1696332_materialize-logo-materialize-css-logo.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 6,
-        "skill": "Foundation",
+        "skillName": "Foundation",
         "img": "https://www.drupal.org/files/styles/grid-3-2x/public/project-images/im01.png?itok=FSOrREJT",
         "link": "link https yada yada yada"
     },
     {
         "id": 7,
-        "skill": "Node.js",
+        "skillName": "Node.js",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 8,
-        "skill": "MySQL",
+        "skillName": "MySQL",
         "img": "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 9,
-        "skill": "MongoDB",
+        "skillName": "MongoDB",
         "img": "https://pluspng.com/img-png/logo-mongodb-png-mongodb-logo-anything-but-the-simplest-of-web-applications-requires-a-database-to-store-and-serve-content-from-choosing-the-right-database-and-structuring-413.png",
         "link": "link https yada yada yada"
     },
     {
         "id": 10,
-        "skill": "React",
+        "skillName": "React",
         "img": "https://tleunen.github.io/react-mdl/react.svg",
         "link": "link https yada yada yada"
-    },
+    }
 ]

@@ -50,7 +50,7 @@
         "img": "./images/weather-PIC.png",
         "gif": "img gif",
         "description": "This application generates a random password based on user selected character sets and character length.",
-        "deployed": "https://ietoy.github.io/Random-Password-Generator/",
-        "repo": "https://github.com/ietoy/Random-Password-Generator" 
+        "deployed": "https://ietoy.github.io/Weather-Dashboard/",
+        "repo": "https://github.com/ietoy/Weather-Dashboard" 
     }
 ]
